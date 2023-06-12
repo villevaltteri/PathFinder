@@ -35,3 +35,17 @@ PathFinder::ConverGrid(std::vector<sf::RectangleShape> &grid, int gridSize)
     }
 
 }
+
+void
+PathFinder::PickTheAlgorithm()
+{
+    switch (pathingAlgorithm)
+    {
+    case 1:
+        /* code */
+        break;
+    
+    default:
+        break;
+    }
+}

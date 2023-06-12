@@ -20,6 +20,7 @@ private:
     const Coordinates end;
     std::vector<std::vector<int>> board;
     void ConverGrid(std::vector<sf::RectangleShape>&, int);
+    void PickTheAlgorithm();
 };
 
 #endif
