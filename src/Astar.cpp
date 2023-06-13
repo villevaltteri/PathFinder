@@ -7,15 +7,8 @@
 Astar::Astar(std::vector<std::vector<int>> board, Coordinates start, Coordinates end):
         board(board), start(start), end(end)
 {
-    std::vector<std::vector<int>> a = Search();
-    for(const auto i : a) {
-        for (const auto k : i) {
-            std::cout << k << " ";
-        }
-        std::cout << std::endl;
-    }
-}
 
+}
 
 int
 Astar::Heuristic(int y, int x, int y2, int x2)
