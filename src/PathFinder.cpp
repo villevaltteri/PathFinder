@@ -16,13 +16,16 @@ PathFinder::ConverGrid(std::vector<sf::RectangleShape> &grid, int gridSize)
     size_t j {};
     for (size_t i {}; i < grid.size(); i++) {
         if (i % gridSize == 0 && i != 0) j++;
-        if (grid.at(i).getFillColor() == sf::Color::White) {
+
+        sf::Color colorAtCell = grid.at(i).getFillColor();
+
+        if (colorAtCell == sf::Color::White) {
             board[j][i % gridSize] = 0;
-        } else if (grid.at(i).getFillColor() == sf::Color::Black) {
+        } else if (colorAtCell == sf::Color::Black) {
             board[j][i % gridSize] = 1;
-        } else if (grid.at(i).getFillColor() == sf::Color::Green) {
+        } else if (colorAtCell == sf::Color::Green) {
             board[j][i % gridSize] = 2;
-        } else if (grid.at(i).getFillColor() == sf::Color::Red) {
+        } else if (colorAtCell == sf::Color::Red) {
             board[j][i % gridSize] = 3;
         }
     }
