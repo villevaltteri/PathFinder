@@ -56,7 +56,7 @@ private:
      * AddToOpen function adds a cell to the openPoints list.
      * 
      * @param y The y-coordinate of the cell.
-     * @param x The x.coordinate of the cell.
+     * @param x The x-coordinate of the cell.
      * @param h The heuristic value.
      * @param g The cost to reach the cell.
      * 
